@@ -28,7 +28,7 @@ public class ReferencesTypeTest {
     int b = 111;
     String str = "Hello.";
     ReferencesType.checkCannotChange(a, b, str);
-    Assert.assertEquals(false, 1);
+    Assert.assertEquals(false, a);
     Assert.assertEquals(111, b);
     Assert.assertEquals("Hello.", str);
   }
