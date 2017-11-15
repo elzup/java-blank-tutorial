@@ -18,7 +18,8 @@ public class ReferencesTypeTest {
   public void q3resetAllFalse() throws Exception {
     boolean[] flags = new boolean[]{ true, true, true, true, true };
     ReferencesType.resetAllFalse(flags);
-    Assert.assertArrayEquals(flags, new boolean[]{ false, false, false, false, false });
+    boolean[] ex = new boolean[]{ false, false, false, false, false };
+    Assert.assertArrayEquals(ex, flags);
   }
 
   @org.junit.Test
@@ -27,16 +28,18 @@ public class ReferencesTypeTest {
     int b = 111;
     String str = "Hello.";
     ReferencesType.checkCannotChange(a, b, str);
-    Assert.assertEquals(a, false);
-    Assert.assertEquals(b, 111);
-    Assert.assertEquals(str, "Hello.");
+    Assert.assertEquals(false, 1);
+    Assert.assertEquals(111, b);
+    Assert.assertEquals("Hello.", str);
   }
 
   @org.junit.Test
   public void q5noBangArraySum() throws Exception {
     int[] nums = new int[]{ 1, 2, 3, 4 };
     int sum = ReferencesType.noBangArraySum(nums);
-    Assert.assertEquals(sum, 10);
-    Assert.assertArrayEquals(nums, new int[]{ 1, 2, 3, 4 });
+    int[] ex = new int[]{ 1, 2, 3, 4 };
+
+    Assert.assertEquals(10, sum);
+    Assert.assertArrayEquals(ex, nums);
   }
 }
