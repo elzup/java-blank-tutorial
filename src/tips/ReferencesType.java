@@ -8,7 +8,7 @@ public class ReferencesType {
     int a = 100;
     int b = a;
     b = 101;
-    return a == 101; // FIXME: true を返す比較に変える
+    return a == ; // FIXME: true となる比較へ変える
   }
 
   // Q2
@@ -16,7 +16,7 @@ public class ReferencesType {
     int[] a = new int[]{ 1, 2, 3 };
     int[] b = a;
     b[0] = 100;
-    return a[0] == 1; // FIXME: true を返す比較に変える
+    return a[0] == ; // FIXME: true となる比較へ変える
   }
 
   // Q3
