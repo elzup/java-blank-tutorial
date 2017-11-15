@@ -2,6 +2,7 @@ package tips;
 
 import org.junit.Assert;
 
+
 public class ReferencesTypeTest {
   @org.junit.Test
   public void primitiveIsNotReferences() throws Exception {
@@ -31,4 +32,11 @@ public class ReferencesTypeTest {
     Assert.assertEquals(str, "Hello.");
   }
 
+  @org.junit.Test
+  public void noBangArraySum() throws Exception {
+    int[] nums = new int[]{ 1, 2, 3, 4 };
+    int sum = ReferencesType.noBangArraySum(nums);
+    Assert.assertEquals(sum, 10);
+    Assert.assertArrayEquals(nums, new int[]{ 1, 2, 3, 4 });
+  }
 }

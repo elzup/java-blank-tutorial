@@ -1,14 +1,14 @@
 package tips;
 
 public class ReferencesType {
-  // keyword: 参照型, 破壊的メソッド
+  // keyword: 参照型, 参照渡し, 破壊的メソッド
 
   // Q1
   static boolean primitiveIsNotReferences() {
     int a = 100;
     int b = a;
     b = 101;
-    return a == ; // FIXME: true となる比較へ変える
+    return a == -999; // FIXME: true となる比較へ変える
   }
 
   // Q2
@@ -16,7 +16,7 @@ public class ReferencesType {
     int[] a = new int[]{ 1, 2, 3 };
     int[] b = a;
     b[0] = 100;
-    return a[0] == ; // FIXME: true となる比較へ変える
+    return a[0] == -999; // FIXME: true となる比較へ変える
   }
 
   // Q3
@@ -29,5 +29,13 @@ public class ReferencesType {
   static void checkCannotChange(boolean a, int b, String str) {
     // FIXME: a, b, str に好きな値を代入する
     str = "change";
+  }
+
+  // Q5
+  static int noBangArraySum(int[] nums) {
+    int[] a = nums;// FIXME: nums の copy を作成する
+    a[0] += a[1];
+    a[2] += a[3];
+    return a[0] + a[2];
   }
 }
