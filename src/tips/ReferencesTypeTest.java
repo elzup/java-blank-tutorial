@@ -5,24 +5,24 @@ import org.junit.Assert;
 
 public class ReferencesTypeTest {
   @org.junit.Test
-  public void primitiveIsNotReferences() throws Exception {
+  public void q1primitiveIsNotReferences() throws Exception {
     Assert.assertTrue(ReferencesType.primitiveIsNotReferences());
   }
 
   @org.junit.Test
-  public void arrayIsReferences() throws Exception {
+  public void q2arrayIsReferences() throws Exception {
     Assert.assertTrue(ReferencesType.arrayIsReferences());
   }
 
   @org.junit.Test
-  public void resetAllFalse() throws Exception {
+  public void q3resetAllFalse() throws Exception {
     boolean[] flags = new boolean[]{ true, true, true, true, true };
     ReferencesType.resetAllFalse(flags);
     Assert.assertArrayEquals(flags, new boolean[]{ false, false, false, false, false });
   }
 
   @org.junit.Test
-  public void checkCannotChange() throws Exception {
+  public void q4checkCannotChange() throws Exception {
     boolean a = false;
     int b = 111;
     String str = "Hello.";
@@ -33,7 +33,7 @@ public class ReferencesTypeTest {
   }
 
   @org.junit.Test
-  public void noBangArraySum() throws Exception {
+  public void q5noBangArraySum() throws Exception {
     int[] nums = new int[]{ 1, 2, 3, 4 };
     int sum = ReferencesType.noBangArraySum(nums);
     Assert.assertEquals(sum, 10);
