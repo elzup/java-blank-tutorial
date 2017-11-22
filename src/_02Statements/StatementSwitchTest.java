@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class StatementSwitchTest {
   @Test
-  public void toStr() throws Exception {
+  public void q1toStr() throws Exception {
     Assert.assertEquals(StatementSwitch.toStr(1), "One");
     Assert.assertEquals(StatementSwitch.toStr(2), "Two");
     Assert.assertEquals(StatementSwitch.toStr(3), "Three");
@@ -17,7 +17,7 @@ public class StatementSwitchTest {
   }
 
   @Test
-  public void toNumber() throws Exception {
+  public void q2toNumber() throws Exception {
     Assert.assertEquals(StatementSwitch.toNumber("A"), 100);
     Assert.assertEquals(StatementSwitch.toNumber("B"), 200);
     Assert.assertEquals(StatementSwitch.toNumber("C"), 200);
@@ -28,7 +28,7 @@ public class StatementSwitchTest {
   }
 
   @Test
-  public void toLogical() throws Exception {
+  public void q3toLogical() throws Exception {
     Assert.assertEquals(StatementSwitch.toLogical(1), 123);
     Assert.assertEquals(StatementSwitch.toLogical(2), 777);
     Assert.assertEquals(StatementSwitch.toLogical(3), 999);
@@ -37,7 +37,7 @@ public class StatementSwitchTest {
   }
 
   @Test
-  public void toStr2() throws Exception {
+  public void q4toStr2() throws Exception {
     Assert.assertEquals(StatementSwitch.toStr2(1), "One");
     Assert.assertEquals(StatementSwitch.toStr2(2), "Two");
     Assert.assertEquals(StatementSwitch.toStr2(3), "Three");
