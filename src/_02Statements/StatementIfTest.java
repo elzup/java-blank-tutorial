@@ -21,8 +21,8 @@ public class StatementIfTest {
   @Test
   public void q3isZero() throws Exception {
     Assert.assertEquals(StatementIf.isZero(-10), false);
-    Assert.assertEquals(StatementIf.witchSign(8), false);
-    Assert.assertEquals(StatementIf.witchSign(0), true);
+    Assert.assertEquals(StatementIf.isZero(8), false);
+    Assert.assertEquals(StatementIf.isZero(0), true);
   }
 
 }
