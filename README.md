@@ -67,16 +67,3 @@ Actual returned "OK";
 
 Congratuation!
 
-
-
-# Setup
-
-Install JUnit
-
-* IntelliJ
-
-TODO:
-
-* eclipse
-
-TODO:
