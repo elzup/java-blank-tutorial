@@ -36,4 +36,13 @@ public class StatementSwitchTest {
     Assert.assertEquals(StatementSwitch.toLogical(-1), -1);
   }
 
+  @Test
+  public void toStr2() throws Exception {
+    Assert.assertEquals(StatementSwitch.toStr2(1), "One");
+    Assert.assertEquals(StatementSwitch.toStr2(2), "Two");
+    Assert.assertEquals(StatementSwitch.toStr2(3), "Three");
+    Assert.assertEquals(StatementSwitch.toStr2(0), "-");
+    Assert.assertEquals(StatementSwitch.toStr2(-1), "-");
+    Assert.assertEquals(StatementSwitch.toStr2(100), "-");
+  }
 }
