@@ -1,5 +1,7 @@
 package _02Statements;
 
+import java.util.HashMap;
+
 public class StatementSwitch {
   // keyword: Switch, case, default
 
@@ -61,5 +63,19 @@ public class StatementSwitch {
         break;
     }
     return c;
+  }
+
+  // Q4
+  static String toStr2(int v) {
+    // FIXME: As follows
+    // v == 1: -> "One"
+    // v == 2: -> "Two"
+    // v == 3: -> "Three"
+    // other:  -> "-"
+
+    HashMap<Integer, String> map = new HashMap<>();
+    map.put(1, "One");
+    map.put(2, "Two");
+    return map.getOrDefault(v, "-");
   }
 }
