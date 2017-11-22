@@ -6,23 +6,23 @@ import org.junit.Test;
 public class StatementIfTest {
   @Test
   public void q1lagerThan0() throws Exception {
-    Assert.assertEquals(StatementIf.lagerThan0(1), "OK");
-    Assert.assertEquals(StatementIf.lagerThan0(0), "NG");
-    Assert.assertEquals(StatementIf.lagerThan0(-1), "NG");
+    Assert.assertEquals("OK", StatementIf.lagerThan0(1));
+    Assert.assertEquals("NG", StatementIf.lagerThan0(0));
+    Assert.assertEquals("NG", StatementIf.lagerThan0(-1));
   }
 
   @Test
   public void q2witchSign() throws Exception {
-    Assert.assertEquals(StatementIf.witchSign(0), "0");
-    Assert.assertEquals(StatementIf.witchSign(-10), "-");
-    Assert.assertEquals(StatementIf.witchSign(4), "+");
+    Assert.assertEquals("0", StatementIf.witchSign(0));
+    Assert.assertEquals("-", StatementIf.witchSign(-10));
+    Assert.assertEquals("+", StatementIf.witchSign(4));
   }
 
   @Test
   public void q3isZero() throws Exception {
-    Assert.assertEquals(StatementIf.isZero(-10), false);
-    Assert.assertEquals(StatementIf.isZero(8), false);
-    Assert.assertEquals(StatementIf.isZero(0), true);
+    Assert.assertEquals(false, StatementIf.isZero(-10));
+    Assert.assertEquals(false, StatementIf.isZero(8));
+    Assert.assertEquals(true, StatementIf.isZero(0));
   }
 
 }
