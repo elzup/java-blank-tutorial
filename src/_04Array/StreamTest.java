@@ -3,12 +3,9 @@ package _04Array;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static org.junit.Assert.*;
 
 public class StreamTest {
   @Test
