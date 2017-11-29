@@ -44,7 +44,7 @@ public class Stream {
     // map double      -> [20, 50, 100, 30, 90, 120, 190]
     // ignore over 100 -> [20, 50, 30, 90]
     // sort            -> [20, 30, 50, 90]
-    // map decoration  -> ["<20>", "<50>", "<30>", "<90>"]
+    // map decoration  -> ["<20>", "<30>", "<50>", "<90>"]
     return nums.stream().sorted().map(v -> String.format("(%d)", v)).collect(Collectors.toList());
   }
 }

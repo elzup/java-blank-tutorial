@@ -57,7 +57,7 @@ public class StreamTest {
   public void q5arrayStreamCombination() throws Exception {
     List<String> res = Stream.arrayStreamCombination(Arrays.asList(10, 25, 50, 15, 45, 60, 95));
     String s = res.stream().collect(Collectors.joining("-"));
-    Assert.assertEquals("<20>-<50>-<30>-<90>", s);
+    Assert.assertEquals("<20>-<30>-<50>-<90>", s);
   }
 
 }
