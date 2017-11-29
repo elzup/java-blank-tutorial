@@ -67,3 +67,11 @@ Actual returned "OK";
 
 Congratuation!
 
+
+
+## java table of contents
+
+* Statements(if/switch)
+* Object, Class
+* Array
+* tips
